@@ -52,7 +52,7 @@
                 <nav class="classy-navbar justify-content-between" id="southNav">
 
                     <!-- Logo -->
-                      <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" width="300px"  alt=""></a>
+                      <a class="nav-brand" href="index.php"><img src="img/core-img/logo.png" width="300px"  alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -70,7 +70,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                               
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="listings.html">Properties</a></li>

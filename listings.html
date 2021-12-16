@@ -53,7 +53,7 @@
                 <nav class="classy-navbar justify-content-between" id="southNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" width="300px"  alt=""></a>
+                    <a class="nav-brand" href="index.php"><img src="img/core-img/logo.png" width="300px"  alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -71,7 +71,7 @@
                         <!-- Nav Start -->
                         <div class="classynav">
                              <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                               
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="listings.html">Properties</a></li>
@@ -211,7 +211,7 @@
   <div class="col-lg-12 well">
   <div class="row">
     <center> <b class="well" style="color: red">Fill Details Below.</b></center>
-        <form action="#" method="POST">
+        <form action="data.php" method="POST">
           <div class="col-sm-12">
               <div class="row">
               <div class="col-sm-6 form-group">
@@ -242,18 +242,18 @@
                 <label>Kind of House</label>
                 <select  name="kind"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">Rental</option>
-                <option value="No">AirBnB</option>
+                <option value="Rental">Rental</option>
+                <option value="AirBnB">AirBnB</option>
               </select>
               </div>
                    <div class="col-sm-6 form-group">
                 <label>No of Bedrooms</label>
-                <select  name="disability"  class="form-control">
+                <select  name="bedroom"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">One</option>
-                <option value="No">Two</option>
-                <option value="No">THree</option>
-                <option value="No">More than Three</option>
+                <option value="One">One</option>
+                <option value="Two">Two</option>
+                <option value="Three">THree</option>
+                <option value="Others">Others</option>
               </select>
               </div>
           </div>
@@ -281,15 +281,15 @@
               <div class="row">
               <div class="col-sm-6 form-group">
                 <label>Gender</label>
-                <select  name="disability"  class="form-control">
+                <select  name="gender"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">Male</option>
-                <option value="No">Female</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
               </select>
               </div>
                <div class="col-sm-6 form-group">
                 <label>No of People</label>
-                <select  name="disability"  class="form-control">
+                <select  name="people"  class="form-control">
                 <option selected>-- Select --</option>
                 <option value="Yes">One</option>
                 <option value="No">Two</option>
@@ -302,12 +302,12 @@
               <div class="row">
               <div class="col-sm-6 form-group">
                 <label>From:</label>
-                <input type="date"  placeholder="Date From.." name="fname" class="form-control">
+                <input type="date"  placeholder="Date From.." name="date1" class="form-control">
               </div>  
 
               <div class="col-sm-6 form-group">
                 <label>To:</label>
-                <input type="date" name="lname" placeholder="Date To.." class="form-control">
+                <input type="date" name="date2" placeholder="Date To.." class="form-control">
               </div>    
             </div>
 
@@ -316,6 +316,20 @@
               <label>Additional Information</label>
               <textarea placeholder="Enter information Here.." name="additional" rows="3" class="form-control"></textarea>
             </div> 
+                <div class="form-group">
+                <label>House Name</label>
+                <select  name="housename"  class="form-control">
+                <option selected>-- Select --</option>
+                <option value="TOWDAH">TOWDAH</option>
+                <option value="YADAH">YADAH</option>
+                <option value="KIFARU">KIFARU</option>
+                <option value="NYATI">NYATI</option>
+                <option value="SIMBA">SIMBA</option>
+                <option value="NDOVU">NDOVU</option>
+
+
+              </select>
+              </div>  
             <button type="submit" name="submit" class="btn btn-lg btn-info">Submit</button>      
           </div>
         </form></div></div></div>
@@ -392,7 +406,7 @@
   <div class="col-lg-12 well">
   <div class="row">
     <center> <b class="well" style="color: red">Fill Details Below.</b></center>
-        <form action="#" method="POST">
+         <form action="data.php" method="POST">
           <div class="col-sm-12">
               <div class="row">
               <div class="col-sm-6 form-group">
@@ -409,32 +423,32 @@
             <div class="row">
               <div class="col-sm-6 form-group">
                 <label>Tel No</label>
-                <input type="text"  placeholder="Enter Tel Name Here.." name="fname" class="form-control">
+                <input type="text"  placeholder="Enter Tel Name Here.." name="tel" class="form-control">
               </div>  
 
               <div class="col-sm-6 form-group">
                 <label>Email</label>
-                <input type="text" name="lname" placeholder="Enter Email Here.." class="form-control">
+                <input type="text" name="email" placeholder="Enter Email Here.." class="form-control">
               </div>    
             </div>
 
             <div class="row">
                 <div class="col-sm-6 form-group">
                 <label>Kind of House</label>
-                <select  name="disability"  class="form-control">
+                <select  name="kind"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">Rental</option>
-                <option value="No">AirBnB</option>
+                <option value="Rental">Rental</option>
+                <option value="AirBnB">AirBnB</option>
               </select>
               </div>
                    <div class="col-sm-6 form-group">
                 <label>No of Bedrooms</label>
-                <select  name="disability"  class="form-control">
+                <select  name="bedroom"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">One</option>
-                <option value="No">Two</option>
-                <option value="No">THree</option>
-                <option value="No">More than Three</option>
+                <option value="One">One</option>
+                <option value="Two">Two</option>
+                <option value="Three">THree</option>
+                <option value="Others">Others</option>
               </select>
               </div>
           </div>
@@ -462,15 +476,15 @@
               <div class="row">
               <div class="col-sm-6 form-group">
                 <label>Gender</label>
-                <select  name="disability"  class="form-control">
+                <select  name="gender"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">Male</option>
-                <option value="No">Female</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
               </select>
               </div>
                <div class="col-sm-6 form-group">
                 <label>No of People</label>
-                <select  name="disability"  class="form-control">
+                <select  name="people"  class="form-control">
                 <option selected>-- Select --</option>
                 <option value="Yes">One</option>
                 <option value="No">Two</option>
@@ -483,12 +497,12 @@
               <div class="row">
               <div class="col-sm-6 form-group">
                 <label>From:</label>
-                <input type="date"  placeholder="Date From.." name="fname" class="form-control">
+                <input type="date"  placeholder="Date From.." name="date1" class="form-control">
               </div>  
 
               <div class="col-sm-6 form-group">
                 <label>To:</label>
-                <input type="date" name="lname" placeholder="Date To.." class="form-control">
+                <input type="date" name="date2" placeholder="Date To.." class="form-control">
               </div>    
             </div>
 
@@ -497,7 +511,21 @@
               <label>Additional Information</label>
               <textarea placeholder="Enter information Here.." name="additional" rows="3" class="form-control"></textarea>
             </div> 
-            <button type="submit" name="submit" class="btn btn-lg btn-info">Submit</button>      
+                <div class="form-group">
+                <label>House Name</label>
+                <select  name="housename"  class="form-control">
+                <option selected>-- Select --</option>
+                <option value="TOWDAH">TOWDAH</option>
+                <option value="YADAH">YADAH</option>
+                <option value="KIFARU">KIFARU</option>
+                <option value="NYATI">NYATI</option>
+                <option value="SIMBA">SIMBA</option>
+                <option value="NDOVU">NDOVU</option>
+
+
+              </select>
+              </div>  
+            <button type="submit" name="submit" class="btn btn-lg btn-info">Submit</button> 
           </div>
         </form></div></div></div>
 
@@ -574,7 +602,7 @@
   <div class="col-lg-12 well">
   <div class="row">
     <center> <b class="well" style="color: red">Fill Details Below.</b></center>
-        <form action="#" method="POST">
+         <form action="data.php" method="POST">
           <div class="col-sm-12">
               <div class="row">
               <div class="col-sm-6 form-group">
@@ -591,32 +619,32 @@
             <div class="row">
               <div class="col-sm-6 form-group">
                 <label>Tel No</label>
-                <input type="text"  placeholder="Enter Tel Name Here.." name="fname" class="form-control">
+                <input type="text"  placeholder="Enter Tel Name Here.." name="tel" class="form-control">
               </div>  
 
               <div class="col-sm-6 form-group">
                 <label>Email</label>
-                <input type="text" name="lname" placeholder="Enter Email Here.." class="form-control">
+                <input type="text" name="email" placeholder="Enter Email Here.." class="form-control">
               </div>    
             </div>
 
             <div class="row">
                 <div class="col-sm-6 form-group">
                 <label>Kind of House</label>
-                <select  name="disability"  class="form-control">
+                <select  name="kind"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">Rental</option>
-                <option value="No">AirBnB</option>
+                <option value="Rental">Rental</option>
+                <option value="AirBnB">AirBnB</option>
               </select>
               </div>
                    <div class="col-sm-6 form-group">
                 <label>No of Bedrooms</label>
-                <select  name="disability"  class="form-control">
+                <select  name="bedroom"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">One</option>
-                <option value="No">Two</option>
-                <option value="No">THree</option>
-                <option value="No">More than Three</option>
+                <option value="One">One</option>
+                <option value="Two">Two</option>
+                <option value="Three">THree</option>
+                <option value="Others">Others</option>
               </select>
               </div>
           </div>
@@ -644,15 +672,15 @@
               <div class="row">
               <div class="col-sm-6 form-group">
                 <label>Gender</label>
-                <select  name="disability"  class="form-control">
+                <select  name="gender"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">Male</option>
-                <option value="No">Female</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
               </select>
               </div>
                <div class="col-sm-6 form-group">
                 <label>No of People</label>
-                <select  name="disability"  class="form-control">
+                <select  name="people"  class="form-control">
                 <option selected>-- Select --</option>
                 <option value="Yes">One</option>
                 <option value="No">Two</option>
@@ -665,12 +693,12 @@
               <div class="row">
               <div class="col-sm-6 form-group">
                 <label>From:</label>
-                <input type="date"  placeholder="Date From.." name="fname" class="form-control">
+                <input type="date"  placeholder="Date From.." name="date1" class="form-control">
               </div>  
 
               <div class="col-sm-6 form-group">
                 <label>To:</label>
-                <input type="date" name="lname" placeholder="Date To.." class="form-control">
+                <input type="date" name="date2" placeholder="Date To.." class="form-control">
               </div>    
             </div>
 
@@ -679,7 +707,21 @@
               <label>Additional Information</label>
               <textarea placeholder="Enter information Here.." name="additional" rows="3" class="form-control"></textarea>
             </div> 
-            <button type="submit" name="submit" class="btn btn-lg btn-info">Submit</button>      
+                <div class="form-group">
+                <label>House Name</label>
+                <select  name="housename"  class="form-control">
+                <option selected>-- Select --</option>
+                <option value="TOWDAH">TOWDAH</option>
+                <option value="YADAH">YADAH</option>
+                <option value="KIFARU">KIFARU</option>
+                <option value="NYATI">NYATI</option>
+                <option value="SIMBA">SIMBA</option>
+                <option value="NDOVU">NDOVU</option>
+
+
+              </select>
+              </div>  
+            <button type="submit" name="submit" class="btn btn-lg btn-info">Submit</button> 
           </div>
         </form></div></div></div>
 
