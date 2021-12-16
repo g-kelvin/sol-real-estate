@@ -75,42 +75,7 @@
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="listings.html">Properties</a></li>
                                 <li><a href="blog.html">Blog</a></li>
-                                <li><a href="#">Mega Menu</a>
-                                    <div class="megamenu">
-                                        <ul class="single-mega cn-col-4">
-                                            <li class="title">Headline 1</li>
-                                            <li><a href="#">Mega Menu Item 1</a></li>
-                                            <li><a href="#">Mega Menu Item 2</a></li>
-                                            <li><a href="#">Mega Menu Item 3</a></li>
-                                            <li><a href="#">Mega Menu Item 4</a></li>
-                                            <li><a href="#">Mega Menu Item 5</a></li>
-                                        </ul>
-                                        <ul class="single-mega cn-col-4">
-                                            <li class="title">Headline 2</li>
-                                            <li><a href="#">Mega Menu Item 1</a></li>
-                                            <li><a href="#">Mega Menu Item 2</a></li>
-                                            <li><a href="#">Mega Menu Item 3</a></li>
-                                            <li><a href="#">Mega Menu Item 4</a></li>
-                                            <li><a href="#">Mega Menu Item 5</a></li>
-                                        </ul>
-                                        <ul class="single-mega cn-col-4">
-                                            <li class="title">Headline 3</li>
-                                            <li><a href="#">Mega Menu Item 1</a></li>
-                                            <li><a href="#">Mega Menu Item 2</a></li>
-                                            <li><a href="#">Mega Menu Item 3</a></li>
-                                            <li><a href="#">Mega Menu Item 4</a></li>
-                                            <li><a href="#">Mega Menu Item 5</a></li>
-                                        </ul>
-                                        <ul class="single-mega cn-col-4">
-                                            <li class="title">Headline 4</li>
-                                            <li><a href="#">Mega Menu Item 1</a></li>
-                                            <li><a href="#">Mega Menu Item 2</a></li>
-                                            <li><a href="#">Mega Menu Item 3</a></li>
-                                            <li><a href="#">Mega Menu Item 4</a></li>
-                                            <li><a href="#">Mega Menu Item 5</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                             
                                 <li><a href="contact.html">Contact</a></li>
                                   <li><a href="#">Signup</a>
                                     <ul class="dropdown">
@@ -150,7 +115,7 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <div class="hero-slides-content">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Find your home</h2>
+                                <!-- <h2 data-animation="fadeInUp" data-delay="100ms">Find your home</h2> -->
                             </div>
                         </div>
                     </div>
@@ -162,7 +127,7 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <div class="hero-slides-content">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Find your dream house</h2>
+                                <!-- <h2 data-animation="fadeInUp" data-delay="100ms">Find your dream house</h2> -->
                             </div>
                         </div>
                     </div>
@@ -174,7 +139,7 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <div class="hero-slides-content">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Find your perfect house</h2>
+                                <!-- <h2 data-animation="fadeInUp" data-delay="100ms">Find your perfect house</h2> -->
                             </div>
                         </div>
                     </div>
@@ -186,7 +151,7 @@
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
                             <div class="hero-slides-content">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Find your perfect house</h2>
+                                <!-- <h2 data-animation="fadeInUp" data-delay="100ms">Find your perfect house</h2> -->
                             </div>
                         </div>
                     </div>
@@ -252,15 +217,38 @@
                     <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="100ms">
                         <!-- Property Thumbnail -->
                         <div class="property-thumb">
-                            <a href="details4.html"> <img src="img/bg-img/one-01.png" alt=""></a>
+                            <a href="details4.html"> <img src="img/bg-img/tow-01.png" alt=""></a>
                             
 
                             <div class="tag">
-                                <span>AirBnB</span>
+                              <a href="details4.html">  <span>TOWDAH</span> </a>
                             </div>
-                          <!--   <div class="list-price">
-                                <p>Ksh. 20,000</p>
-                            </div> -->
+                            <div class="list-price">
+                                <p>
+                            <?php 
+                            include "dashboard/config.php"; 
+                          
+                            $feedback="SELECT * from bookings WHERE status = 'pending' and Housename = 'TOWDAH' ";
+                            if ($result=mysqli_query($con,$feedback) )
+                            {
+                            // Return the number of rows in result set
+                            $rows=mysqli_num_rows($result);
+                            if ($rows >0) {
+                                echo "Booked";
+                                # code...
+                            }
+                            else
+                            {
+                                echo "Available";
+                            }
+                            // Free result set
+                            mysqli_free_result($result);
+                            }
+
+
+                            ?>
+                                </p>
+                            </div>
                         </div>
                         <!-- Property Content -->
                         <div class="property-content" style=" background-color: white">
@@ -294,14 +282,37 @@
                     <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="200ms">
                         <!-- Property Thumbnail -->
                         <div class="property-thumb">
-                           <a href="details5.html"> <img src="img/bg-img/one-03.png" alt=""></a>
+                           <a href="details5.html"> <img src="img/bg-img/yadah7.jpg" alt=""></a>
 
                             <div class="tag">
-                                <span>AirBnB</span>
+                                 <a href="details5.html">  <span>YADAH</span> </a>
                             </div>
-                          <!--   <div class="list-price">
-                                <p>Ksh. 20,000</p>
-                            </div> -->
+                            <div class="list-price">
+                                <p>
+                            <?php 
+                            include "dashboard/config.php"; 
+                          
+                            $feedback="SELECT * from bookings WHERE status = 'pending' and Housename = 'YADAH' ";
+                            if ($result=mysqli_query($con,$feedback) )
+                            {
+                            // Return the number of rows in result set
+                            $rows=mysqli_num_rows($result);
+                            if ($rows >0) {
+                                echo "Booked";
+                                # code...
+                            }
+                            else
+                            {
+                                echo "Available";
+                            }
+                            // Free result set
+                            mysqli_free_result($result);
+                            }
+
+
+                            ?>
+                                </p>
+                            </div>
                         </div>
                         <!-- Property Content -->
                         <div class="property-content" style=" background-color: white">
@@ -335,14 +346,37 @@
                     <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Property Thumbnail -->
                         <div class="property-thumb">
-                           <a href="details6.html"> <img src="img/bg-img/one-08.png" alt=""></a>
+                           <a href="details6.html"> <img src="img/bg-img/kifaru.jpg" alt=""></a>
 
                             <div class="tag">
-                               <span>AirBnB</span>
+                                 <a href="details6.html">  <span>KIFARU</span> </a>
                             </div>
-                          <!--   <div class="list-price">
-                                <p>Ksh. 20,000</p>
-                            </div> -->
+                            <div class="list-price">
+                                <p>
+                            <?php 
+                            include "dashboard/config.php"; 
+                          
+                            $feedback="SELECT * from bookings WHERE status = 'pending' and Housename = 'KIFARU' ";
+                            if ($result=mysqli_query($con,$feedback) )
+                            {
+                            // Return the number of rows in result set
+                            $rows=mysqli_num_rows($result);
+                            if ($rows >0) {
+                                echo "Booked";
+                                # code...
+                            }
+                            else
+                            {
+                                echo "Available";
+                            }
+                            // Free result set
+                            mysqli_free_result($result);
+                            }
+
+
+                            ?>
+                                </p>
+                            </div>
                         </div>
                         <!-- Property Content -->
                         <div class="property-content" style=" background-color: white">
@@ -375,14 +409,37 @@
                     <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="400ms">
                         <!-- Property Thumbnail -->
                         <div class="property-thumb">
-                           <a href="details7.html"> <img src="img/bg-img/one-14.png" alt=""> </a>
+                           <a href="details7.html"> <img src="img/bg-img/nyati.jpg" alt=""> </a>
 
                             <div class="tag">
-                                <span>AirBnB</span>
+                                 <a href="details7.html">  <span>NYATI</span> </a>
                             </div>
-                          <!--   <div class="list-price">
-                                <p>Ksh. 20,000</p>
-                            </div> -->
+                            <div class="list-price">
+                                <p>
+                            <?php 
+                            include "dashboard/config.php"; 
+                          
+                            $feedback="SELECT * from bookings WHERE status = 'pending' and Housename = 'NYATI' ";
+                            if ($result=mysqli_query($con,$feedback) )
+                            {
+                            // Return the number of rows in result set
+                            $rows=mysqli_num_rows($result);
+                            if ($rows >0) {
+                                echo "Booked";
+                                # code...
+                            }
+                            else
+                            {
+                                echo "Available";
+                            }
+                            // Free result set
+                            mysqli_free_result($result);
+                            }
+
+
+                            ?>
+                                </p>
+                            </div>
                         </div>
                         <!-- Property Content -->
                         <div class="property-content" style=" background-color: white">
@@ -415,14 +472,38 @@
                     <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="500ms">
                         <!-- Property Thumbnail -->
                         <div class="property-thumb">
-                          <a href="details8.html">  <img src="img/bg-img/one-19.png" alt=""></a>
+                          <a href="details8.html">  <img src="img/bg-img/simba.jpg" alt=""></a>
 
+                           
                             <div class="tag">
-                               <span>AirBnB</span>
+                                 <a href="details8.html">  <span>SIMBA</span> </a>
                             </div>
-                          <!--   <div class="list-price">
-                                <p>Ksh. 20,000</p>
-                            </div> -->
+                            <div class="list-price">
+                                <p>
+                            <?php 
+                            include "dashboard/config.php"; 
+                          
+                            $feedback="SELECT * from bookings WHERE status = 'pending' and Housename = 'SIMBA' ";
+                            if ($result=mysqli_query($con,$feedback) )
+                            {
+                            // Return the number of rows in result set
+                            $rows=mysqli_num_rows($result);
+                            if ($rows >0) {
+                                echo "Booked";
+                                # code...
+                            }
+                            else
+                            {
+                                echo "Available";
+                            }
+                            // Free result set
+                            mysqli_free_result($result);
+                            }
+
+
+                            ?>
+                                </p>
+                            </div>
                         </div>
                         <!-- Property Content -->
                         <div class="property-content" style=" background-color: white">
@@ -455,14 +536,37 @@
                     <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="600ms">
                         <!-- Property Thumbnail -->
                         <div class="property-thumb">
-                          <a href="details.html">  <img src="img/bg-img/one-26.png" alt=""> </a>
+                          <a href="details9.html">  <img src="img/bg-img/ndovu.jpg" alt=""> </a>
 
-                            <div class="tag">
-                                 <span>AirBnB</span>
+                             <div class="tag">
+                                 <a href="details9.html">  <span>NDOVU</span> </a>
                             </div>
-                          <!--   <div class="list-price">
-                                <p>Ksh. 20,000</p>
-                            </div> -->
+                            <div class="list-price">
+                                <p>
+                            <?php 
+                            include "dashboard/config.php"; 
+                          
+                            $feedback="SELECT * from bookings WHERE status = 'pending' and Housename = 'NDOVU' ";
+                            if ($result=mysqli_query($con,$feedback) )
+                            {
+                            // Return the number of rows in result set
+                            $rows=mysqli_num_rows($result);
+                            if ($rows >0) {
+                                echo "Booked";
+                                # code...
+                            }
+                            else
+                            {
+                                echo "Available";
+                            }
+                            // Free result set
+                            mysqli_free_result($result);
+                            }
+
+
+                            ?>
+                                </p>
+                            </div>
                         </div>
                         <!-- Property Content -->
                         <div class="property-content" style=" background-color: white">
@@ -512,56 +616,7 @@
     </section>
     <!-- ##### Call To Action Area End ##### -->
 
-    <section class="south-contact-area section-padding-100">
-        <div class="container">
-                <div class="row">
-                <!-- ##### Milestones ##### -->
-                <div class="col-12">
-                    <div class="elements-title">
-                        <h2>Milestones</h2>
-                    </div>
-                </div>
 
-                <!-- Single Cool Fact -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-cool-fact-area mb-100">
-                        <img src="img/icons/prize2.png" alt="">
-                        <h2><span class="counter">14</span></h2>
-                        <h6>Years of Experience</h6>
-                    </div>
-                </div>
-                <!-- Single Cool Fact -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-cool-fact-area mb-100">
-                        <img src="img/icons/new2.png" alt="">
-                        <h2>+<span class="counter">1000</span></h2>
-                        <h6>Happy clients</h6>
-                    </div>
-                </div>
-                <!-- Single Cool Fact -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-cool-fact-area mb-100">
-                        <img src="img/icons/house2.png" alt="">
-                        <h2><span class="counter">14</span>k</h2>
-                        <h6>Followers on FB</h6>
-                    </div>
-                </div>
-                <!-- Single Cool Fact -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="single-cool-fact-area mb-100">
-                        <img src="img/icons/house1.png" alt="">
-                        <h2><span class="counter">723</span></h2>
-                        <h6>Finished Projects</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </section>
-
-  
-
-   
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area section-padding-100-0 bg-img gradient-background-overlay" style="background-image: url(img/bg-img/cta.jpg);">
