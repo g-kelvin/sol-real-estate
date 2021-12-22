@@ -162,8 +162,18 @@ if($con){
     $date2 = $_POST['date2'];
     $additional = $_POST['additional'];
     $housename = $_POST['housename'];
-  
 
+     $feedback="SELECT * from bookings WHERE status = 'pending' and Housename = '$housename' ";
+        if ($result=mysqli_query($con,$feedback) )
+        {
+        // Return the number of rows in result set
+        $rows=mysqli_num_rows($result);
+        if ($rows >0) {
+            echo "Sorry ".$fname." ".$lname.  ", We regret to inform you that this house is already Booked ";
+        }
+        else
+        {
+            
     $qry=mysqli_query( $con," INSERT INTO `bookings` (`bookingid`, `fname`, `lname`, `tel`, `email`, `kind`, `address`, `town`, `county`,`postal`,  `bedroom`, `gender`, `people`, `date1`, `date2`, `additional`, `housename`, `status`) 
 
         VALUES (NULL, '$fname', '$lname', '$tel', '$email', '$kind', '$address', '$town', '$county', '$postal', '$bedroom', '$gender','$people', '$date1', '$date2', '$additional', '$housename', 'Pending') " );
@@ -176,6 +186,12 @@ if($con){
     else{
       echo "Data Posting Error";
     }
+        }
+        // Free result set
+        mysqli_free_result($result);
+        }
+
+  
 
   
     
