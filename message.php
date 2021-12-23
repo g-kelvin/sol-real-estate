@@ -1,8 +1,6 @@
 <?php 
 ini_set('display_errors', 0);
 require('fpdf/fpdf.php');
-
-
 require "PHPMailer/PHPMailerAutoload.php";
 
 function smtpmailer($to, $from, $from_name, $subject, $body)
