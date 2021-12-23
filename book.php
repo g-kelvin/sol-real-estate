@@ -84,7 +84,7 @@
                                         <li><a href="login/login.html">Login</a></li> 
                                     </ul>
                                 </li>
-                                 <li><a href="book.html" class="btn btn-warning" data-wow-delay="500ms">Book</a></li>
+                                 <li><a href="book.php" class="btn btn-warning" data-wow-delay="500ms">Book</a></li>
                                      
                             </ul>
 
@@ -224,10 +224,10 @@
                 <label>No of People</label>
                 <select  name="people"  class="form-control">
                 <option selected>-- Select --</option>
-                <option value="Yes">One</option>
-                <option value="No">Two</option>
-                <option value="No">Three</option>
-                <option value="No">More than Three</option>
+                <option value="One">One</option>
+                <option value="two">Two</option>
+                <option value="Three">Three</option>
+                <option value="More Than Three">More than Three</option>
               </select>
               </div>  
             </div>
@@ -263,18 +263,40 @@
 
               </select>
               </div>  
-            <button type="submit" name="submit" class="btn btn-lg btn-info">Submit</button>      
+            <button type="submit" name="submit" class="btn btn-lg btn-info" data-toggle="modal" data-target="#exampleModal">Submit</button> 
+            <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Booking Successful !!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Booking Successful !!
+        Thank for booking with Shabach Gardens. You Invoice successful downloaded in your machine. Check your email for more information. Thank you. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><a href="book.php">Close</a> </button>
+       
+      </div>
+    </div>
+  </div>
+</div>  
+              
           </div>
         </form></div></div></div>
 
-                        <!-- form end -->
+                        <!-- form end -->   
                 <!-- Single Team Member -->
                
             </div>
         </div>
     </section>
     <!-- ##### Meet The Team Area End ##### -->
-    
+
 
  
     <!-- ##### Footer Area Start ##### -->
