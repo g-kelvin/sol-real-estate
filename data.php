@@ -1,6 +1,6 @@
 <?php 
 // $con= mysqli_connect("localhost","thebeaco_admin", "7RWMt24Yv+v9*k","thebeaco_thebeacon");
-include "myinvoice.php"; 
+
 $con= mysqli_connect("localhost","root", "","sol");
 if($con){
 
@@ -24,7 +24,7 @@ if($con){
     $housename = $_POST['housename'];
     // echo "$lname";
 
-     $feedback="SELECT * from bookings WHERE status = 'pending' and Housename = '$housename' ";
+     $feedback="SELECT * from bookings WHERE status = 'pending' and date1 = '$date1' and date2 = '$date2' and housename = '$housename'  ";
         if ($result=mysqli_query($con,$feedback) )
         {
         // Return the number of rows in result set

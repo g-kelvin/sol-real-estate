@@ -53,7 +53,7 @@
                 <nav class="classy-navbar justify-content-between" id="southNav">
 
                     <!-- Logo -->
-                   <a class="nav-brand" href="index.php"><img src="img/core-img/logo.png" width="300px"  alt=""></a>
+                   <a class="nav-brand" href="index.php"><img src="img/core-img/logo-01.png" width="150px"  alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -130,7 +130,14 @@
                 <div class="col-12">
                     <div class="section-heading">
                        <h1 class="well"><strong>BOOKING FORM</strong></h1>
-                        <p>Fill Details Below.</p>
+                        <p>Click to veiw booked dates in each House</p>
+                        <a href="dates.php" class="btn btn-success">Towdah</a>
+                        <a href="yadah.php" class="btn btn-success">YADAH</a>
+                        <a href="kifaru.php" class="btn btn-success">KIFARU</a>
+                        <a href="nyati.php" class="btn btn-success">NYATI</a>
+                        <a href="simba.php" class="btn btn-success">SIMBA</a>
+                        <a href="ndovu.php" class="btn btn-success">NDOVU</a>
+
                     </div>
                 </div>
             </div>
@@ -269,7 +276,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Booking Successful !!</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Booking Successful !!!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -314,7 +321,7 @@
                             <div class="widget-title">
                                 <h6>About Us</h6>
                             </div>
-                            <p align="justify">At Sol Real Estate, you are number one. Whether you are a property owner, tenant or buyer, We value your business and we will provide you with individual attention and service you deserve. We believe a strict code of ethics. We believe in integrity, commitment to excellence, a professional attitude and professional care... <a href="about-us.html"> <b style="color: green">Read More</b> </a></p>
+                            <p align="justify">At Shabach Gardens, you are number one. Whether you are a property owner, tenant or buyer, We value your business and we will provide you with individual attention and service you deserve. We believe a strict code of ethics. We believe in integrity, commitment to excellence, a professional attitude and professional care... <a href="about-us.html"> <b style="color: green">Read More</b> </a></p>
                         </div>
                     </div>
 

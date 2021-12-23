@@ -9,7 +9,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title  -->
-    <title>Shabach Gardens - AirBnB & Rentals</title>
+   <title>Shabach Gardens - AirBnB & Rentals</title>
 
     <!-- Favicon  -->
     <link rel="icon" href="img/core-img/favicon-01.png">
@@ -40,7 +40,7 @@
                         <img src="img/icons/phone-call.png" alt="">
                     </div>
                     <div class="number">
-                        <a href="tel:+254 718 987 527">+254 718 987 527</a>
+                       <a href="tel:+254 718 987 527">+254 718 987 527</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                 <nav class="classy-navbar justify-content-between" id="southNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index.php"><img src="img/core-img/logo-01.png" width="150px"  alt=""></a>
+                   <a class="nav-brand" href="index.php"><img src="img/core-img/logo-01.png" width="150px"  alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -76,7 +76,7 @@
                                 <li><a href="about-us.html">About Us</a></li>
                                 <li><a href="listings.html">Properties</a></li>
                                 <li><a href="blog.html">Blog</a></li>
-                         
+                        
                                 <li><a href="contact.html">Contact</a></li>
                                   <li><a href="#">Signup</a>
                                     <ul class="dropdown">
@@ -121,97 +121,99 @@
     </section>
     <!-- ##### Breadcumb Area End ##### -->
 
-    <!-- ##### Blog Area Start ##### -->
-    <section class="south-blog-area section-padding-100">
+
+
+       <!-- ##### Meet The Team Area Start ##### -->
+    <section class="meet-the-team-area section-padding-100-0">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-8">
-                   
-                    <!-- Single Blog Area -->
-                    <div class="single-blog-area mb-50">
-                        <!-- Post Thumbnail -->
-                        <div class="blog-post-thumbnail">
-                            <img src="img/bg-img/one-19.png" alt="">
-                        </div>
-                        <!-- Post Content -->
-                        <div class="post-content">
-                            <!-- Date -->
-                            <div class="post-date">
-                                <a href="#">Dec 16, 2021</a>
-                            </div>
-                            <!-- Headline -->
-                            <a href="#" class="headline">Safety features</a>
-                            <!-- Post Meta -->
-                            <div class="post-meta">
-                                <p>By <a href="#">Admin</a> | in <a href="#">Uncategorized</a> | <a href="#">2 Comments</a></p>
-                            </div>
-                            <p>
-                                <li>Staff follow all safety protocols as directed by local authorities</li>
-                                <li>Hand sanitizer in guest accommodation and key areas</li>
-                                <li> Process in place to check health of guests.</li>
-                                <li>Physical distancing</li>
-                                <li>Contactless check-in/check-ou</li>
-                                <li>Cashless payment available</li>
-                                <li>Physical distancing rules followed</li>
-                                <li>Cleanliness & disinfecting</li>
-                                <li>Guest accommodation is disinfected between stays</li>
-                                <li>Guest accommodation sealed after cleaning</li>
-                                <li>Property is cleaned by professional cleaners</li>
-                            </p>
-                            <!-- Read More btn -->
-                            <a href="book.php" class="btn south-btn">BOOK NOW</a>
-                        </div>
-                    </div>
-                   
-                 
-               
-                </div>
-
-                <div class="col-12 col-lg-4">
-                    <div class="blog-sidebar-area">
-
-                        <!-- Search Widget -->
-                        <div class="search-widget-area mb-70">
-                            <form action="#" method="get">
-                                <input type="search" name="search" id="search" placeholder="Search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-
-                        <!-- Catagories Widget -->
-                        <div class="south-catagories-card mb-70">
-                            <h5>Quick Links</h5>
-                            <ul class="catagories-menu">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Properties</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
                 <div class="col-12">
-                    <!-- Pagination -->
-                    <div class="south-pagination mt-100 d-flex">
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination">
-                                <li class="page-item"><a class="page-link active" href="#">01</a></li>
-                                <li class="page-item"><a class="page-link" href="#">02</a></li>
-                                <li class="page-item"><a class="page-link" href="#">03</a></li>
-                            </ul>
-                        </nav>
+                    <div class="section-heading">
+                       <h1 class="well"><strong>BOOKING FORM</strong></h1>
+                        <p>Fill Details Below.</p>
+
                     </div>
                 </div>
             </div>
+
+            <div class="row justify-content-center">
+
+                  <!-- form start -->
+
+                        <div class="col-12">
+                <div class="table-responsive">
+                  <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                      <tr>
+                        <th>#ID</th>
+                        <th>Type</th>
+                        <th>Rooms</th>
+                        <th>House</th>
+                        <th>From</th>
+                        <th>To</th>
+
+
+                      </tr>
+                    </thead>
+                    
+                    <?php
+                      include "dashboard/config.php"; 
+
+                     
+                      $feedback="SELECT * from bookings WHERE  status ='pending' and Housename = 'KIFARU' ORDER BY bookingid DESC  LIMIT 10 ";
+                        $rest= mysqli_query($con,$feedback);
+                        while($rows= mysqli_fetch_assoc($rest)){
+                           ?> 
+                           <tr>
+                             <td> <?php echo $rows['bookingid'];  ?></td>
+                              <td> <?php echo $rows['kind'];  ?></td>
+                              <td> <?php echo $rows['bedroom'];  ?></td>
+                              <td> <?php echo $rows['housename'];  ?></td>
+                             <td> <?php echo $rows['date1'];?></td>
+                             <td> <?php echo $rows['date2'];  ?></td>
+                            
+                                
+                              
+
+                           </tr> 
+
+
+
+
+
+
+
+
+<?php
+}
+
+
+
+
+
+
+
+
+
+  ?>
+                  </table>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+            </div>
+            <!-- Message From Customer-->
+        
+          </div>
+          <!--Row-->
+
+
+         </div>
         </div>
     </section>
-    <!-- ##### Blog Area End ##### -->
+    <!-- ##### Meet The Team Area End ##### -->
 
+
+ 
     <!-- ##### Footer Area Start ##### -->
   <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area section-padding-100-0 bg-img gradient-background-overlay" style="background-image: url(img/bg-img/cta.jpg);">
@@ -248,7 +250,7 @@
                             </div>
                             <!-- Address -->
                             <div class="address">
-                                <h6><img src="img/icons/phone-call.png" alt=""> +254 718 987 527</h6>
+                               <h6><img src="img/icons/phone-call.png" alt=""> +254 718 987 527</h6>
                                 <h6><img src="img/icons/envelope.png" alt=""> info@shabachgardens.com</h6>
                                 <h6><img src="img/icons/location.png" alt=""> Kiambu Road, Nairobi - Kenya</h6>
                             </div>
@@ -331,6 +333,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery-ui.min.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
+    <script src="js/map-active.js"></script>
 
 </body>
 
