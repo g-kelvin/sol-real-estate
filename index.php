@@ -52,7 +52,7 @@
                 <nav class="classy-navbar justify-content-between" id="southNav">
 
                     <!-- Logo -->
-                      <a class="nav-brand" href="index.php"><img src="img/core-img/logo-01.png" width="150px"  alt=""></a>
+                      <a class="nav-brand" href="index.php"><img src="img/core-img/logo1-01.png" width="150px"  alt=""></a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -174,24 +174,22 @@
             </div>
             <p class="wow fadeInUp" data-wow-delay="500ms" align="justify" style="color: black">
                 I value teamwork and interdisciplinary Collaboration as a path to insight and excellence in my work. I embrace the following core values:<br>
-                <strong>Quality :</strong><br>
-                <li> We intend to deliver only excellence and aim to exceed expectations in everything we do.</li><br>
+                
                 <strong>Integrty :</strong><br>
-                <li> We conduct ourselves in the highest ethical standards, demonstrating honesty and fairness in every decision and action.</li><br>
-                <strong>Agility :</strong><br>
-                <li> We execute expeditiously to address our clients and my dad and mum’s needs</li><br>
-                 <strong>Courage :</strong><br>
-                <li> We make decisions and act in the best interest of our clients/ guests</li><br>
-                 <strong>Respect/ Trust :</strong><br>
-                <li> We treat our clients and each other with dignity and respect at all times</li><br>
-                <strong>Fun :</strong><br>
-                <li> Have fun at work and with all other parties involved</li><br>
+                <li align="justify" > We conduct ourselves in the highest ethical standards, demonstrating honesty and fairness in every decision and action.</li><br>
+                <strong>Community :</strong><br>
+                 <strong>Tranquility :</strong><br>
+                <li align="justify" > We have found that the greatest degree of inner tranquility comes from the development of love and compassion. The more we care for the happiness of others, the greater is our own sense of well-being.  At Shabach Gardens we know what we want. We want calm, peace, tranquility, freedom, fun, and happiness.</li><br>
+                 <strong>Respect for people :</strong><br>
+                <li align="justify" >We Implement the platinum rule: treat others as they wish to be treated. To us, respect for the individual means more than just smiling and being polite. It means that every person is of equal value and deserves the same level of care, respect and attention that serves everyone well.</li><br>
+                <strong>Innovative :</strong><br>
+                <li align="justify" > Do things differently – turn challenge into opportunity and ideas into creative solutions.</li><br>
 
 
 
             </p>
             <div class="address wow fadeInUp" data-wow-delay="750ms">
-                <h6><img src="img/icons/phone-call.png" alt=""> +254 792 945 999</h6>
+                <h6><img src="img/icons/phone-call.png" alt=""> +254 718 987 527</h6>
                 <h6><img src="img/icons/envelope.png" alt=""> info@shabachgardens.com</h6>
             </div>
         </div>
@@ -346,7 +344,7 @@
                     <div class="single-featured-property mb-50 wow fadeInUp" data-wow-delay="300ms">
                         <!-- Property Thumbnail -->
                         <div class="property-thumb">
-                           <a href="details6.html"> <img src="img/bg-img/kifaru.jpg" alt=""></a>
+                           <a href="details6.html"> <img src="img/bg-img/kifaru-09.png" alt=""></a>
 
                             <div class="tag">
                                  <a href="details6.html">  <span>KIFARU</span> </a>
